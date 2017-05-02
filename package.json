@@ -1,0 +1,41 @@
+{
+  "name": "protractor with Grunt tutorial",
+  "description": "learning project for E2e test, with protractor",
+  "version": "1.0.0",
+  "repository": "https://github.com/1greenapplee",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "circular-json": "^0.3.1",
+    "express": "^4.13.4",
+    "grunt": "~1.0.1",
+    "nedb": "^1.8.0",
+    "protractor": "^5.1.1"
+
+  },
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-material-protractor": "^3.2.0",
+    "bootstrap": "^3.3.7",
+    "fs": "0.0.1-security",
+    "webserver": "^1.1.2",
+    "grunt-angular-templates": "~1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-express-server": "^0.5.3",
+    "grunt-protractor-runner": "^5.0.0",
+    "grunt-run": "^0.6.0",
+    "jasmine-given": "^2.6.4",
+    "jasmine-json-test-reporter": "^1.0.0-beta",
+    "jquery": "^3.2.1"
+    
+
+    
+  },
+  "scripts": {
+    "update-webdriver": "webdriver-manager update",
+    "postinstall": "webdriver-manager update",
+    "test": "grunt test",
+    "pretest": "npm install"
+  }
+}

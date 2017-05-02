@@ -1,0 +1,20 @@
+{
+    "suite1": {
+        "id": "suite1",
+        "description": "first test suites",
+        "fullName": "first test suites",
+        "failedExpectations": [],
+        "status": "finished",
+        "specs": [
+            {
+                "id": "spec0",
+                "description": "should be able to perform a first test",
+                "fullName": "first test suites should be able to perform a first test",
+                "failedExpectations": [],
+                "passedExpectations": [],
+                "pendingReason": "",
+                "status": "passed"
+            }
+        ]
+    }
+}
