@@ -9,7 +9,7 @@ grunt e2e
 
 
 .jshintrc config file for protractor with es6.
-
+```
 {
   "jasmine": true,
   "mocha": true,
@@ -29,3 +29,4 @@ grunt e2e
     "list": false
   }
 }
+```
