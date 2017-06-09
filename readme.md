@@ -14,6 +14,7 @@ grunt e2e
   "jasmine": true,
   "mocha": true,
   "esversion":6,
+  "loopfunc": true,
   "globals": {
     "esversion": 6,
     "angular": false,
