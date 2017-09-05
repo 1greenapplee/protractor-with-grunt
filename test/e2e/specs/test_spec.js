@@ -17,9 +17,16 @@ describe('first test suites', function () {
 
     });
 
-    it('should be able to add an item to the ToDo', function () {
+    it('should be able to add an item to the ToDo without Page Objects', function () {
         common.goToPage(v.angularWebsite);
         td.inputField.sendKeys(v.firstToDo);
+        td.add().click();
+        td.check(v.firstToDo);
+    });
+    it('should be able to add an item to the ToDo with Page objects', function () {
+        browser.get("https://angularjs.org/");
+        td.inputField.sendKeys(v.firstToDo);
+        element(by.model('todoList.todoText')).sendKeys('Our first To DO');
         td.add().click();
         td.check(v.firstToDo);
     });
