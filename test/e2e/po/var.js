@@ -1,4 +1,4 @@
 module.exports = {
-    d031718: "03/17/2018"
-   
+    angularWebsite: "https://angularjs.org/",
+    firstToDo: "Our first To DO"
 };

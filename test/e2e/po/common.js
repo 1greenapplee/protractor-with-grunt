@@ -1,9 +1,8 @@
 // Object Page
-
-var commonElements = function() {
-     this.goToProtractorAPIpage = function() {
-        browser.get('http://www.protractortest.org/#/api');
+let commonElements = function() {
+     this.goToPage = function(param) {
+        browser.get(param);
     };
 
-}
+};
 module.exports = new commonElements();

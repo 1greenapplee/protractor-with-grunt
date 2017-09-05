@@ -2,25 +2,26 @@
 'use strict';
 require('jasmine-given');
 
-var common = require('../../e2e/po/common.js');
-var v = require('../../e2e/po/var.js');
+let common = require('../../e2e/po/common.js');
+let td = require('../../e2e/po/toDo.po');
+let v = require('../../e2e/po/var.js');
 //browser.driver.sleep(4000);
 
-describe('first test suites', function() {
+describe('first test suites', function () {
 
     beforeEach(() => {
         browser.manage().deleteAllCookies();
-        browser.driver.manage().window().maximize();
     });
 
-    afterEach(function() {
+    afterEach(() => {
 
     });
 
-    it('should be able to perform a first test', function() {
-       common.goToProtractorAPIpage();
-       element(by.id('searchInput')).sendKeys('promise');
-       browser.driver.sleep(4000);
+    it('should be able to add an item to the ToDo', function () {
+        common.goToPage(v.angularWebsite);
+        td.inputField.sendKeys(v.firstToDo);
+        td.add().click();
+        td.check(v.firstToDo);
     });
 
 });
