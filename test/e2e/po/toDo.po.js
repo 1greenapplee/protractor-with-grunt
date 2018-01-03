@@ -6,7 +6,7 @@ let toDoElements = function() {
     };
     this.check = function(item){
         element.all(by.repeater('todo in todoList.todos')).then(function(oneItem){
-          console.log(oneItem.length);
+          console.log('item length:' + oneItem.length);
             for(let i=0;i<oneItem.length;i++){
                 oneItem[i].getText().then(function(textFromRepeat){
                    if(textFromRepeat === item){
