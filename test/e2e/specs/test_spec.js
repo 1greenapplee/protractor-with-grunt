@@ -1,6 +1,5 @@
 // spec.js
 'use strict';
-require('jasmine-given');
 
 let common = require('../../e2e/po/common.js');
 let td = require('../../e2e/po/toDo.po');

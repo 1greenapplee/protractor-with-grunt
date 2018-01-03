@@ -1,13 +1,10 @@
 var JasmineRunner = require('jasmine');
 var jrunner = new JasmineRunner();
-var JSONReporter = require('jasmine-json-test-reporter');
-// var wdOpts = { desiredCapabilities: { browserName: 'phantomjs' } };
 var fs = require('fs');
 
 exports.config = {
     onPrepare: function() {
         global.ddval = 1;
-
     },
 
     // location of E2E test specs
@@ -15,9 +12,14 @@ exports.config = {
         '../test/e2e/specs/**/*_spec.js'
     ],
 
-    multiCapabilities: [{
-        'browserName': 'chrome'
-    }],
+    capabilities: {
+        browserName: 'chrome',
+        chromeOptions: {
+              // args: ['--headless', '--disable-gpu', '--window-size=400,840'] //
+        }
+    },
+
+    // directConnect: true,
 
     // url where your app is running, relative URLs are prepending with this URL
     baseUrl: 'http://localhost:3000',
