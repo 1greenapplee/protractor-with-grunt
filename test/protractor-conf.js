@@ -9,7 +9,7 @@ exports.config = {
 
     // location of E2E test specs
     specs: [
-        '../test/e2e/specs/**/*_spec.js'
+        '../test/e2e/specs/**/*test_spec.js'
     ],
 
     capabilities: {
