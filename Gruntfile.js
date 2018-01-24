@@ -151,8 +151,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-run');
     grunt.loadNpmTasks('grunt-express-server');
 
-
     grunt.registerTask('e2e', ['express:dev', 'connect:test', 'protractor:continuous', 'watch:protractor', 'connect:livereload']);
-
 
 };
