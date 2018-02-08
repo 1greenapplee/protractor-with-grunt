@@ -93,7 +93,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             protractor: {
-                files: ['test/e2e/specs/*.js'], //'app/js/**/*.js', 
+                files: ['test/e2e/*sandbox.js'], //'app/js/**/*.js',
                 tasks: ['protractor:continuous']
             },
             express: {

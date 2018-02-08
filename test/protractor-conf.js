@@ -19,7 +19,7 @@ exports.config = {
         }
     },
 
-    // directConnect: true,
+    directConnect: true,
 
     // url where your app is running, relative URLs are prepending with this URL
     baseUrl: 'http://localhost:3000',
